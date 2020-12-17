@@ -1,0 +1,16 @@
+.ng-invalid.ng-touched{
+  border-color: red;
+}
+
+.ng-valid.ng-touched{
+  border-color: green;
+}
+.contenu{
+  height: 900px;
+  width: 100%;
+}
+
+.form{
+  box-shadow: 12px 12px rgba(60, 60, 60, 0.2);
+  border-radius: 35px 0 35px 0;
+}

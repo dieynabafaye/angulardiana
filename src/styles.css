@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "~font-awesome/css/font-awesome.css";
+
+body{
+  background-image: url("./assets/images/bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

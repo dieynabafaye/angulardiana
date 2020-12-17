@@ -1,0 +1,73 @@
+<div class="row h-100">
+  <div class="col-2 align-content-start bg-light">
+
+    <mat-sidenav-container>
+
+      <mat-sidenav-content>
+        <!-- Logo -->
+        <div class="mb-5">
+          <div class="logo-wrapper waves-light">
+            <a href="#"><img src="assets/images/Logo-Sonatel-Academy-480_1-1.png" class="img-fluid flex-center"></a>
+          </div>
+        </div>
+        <!--/. Logo -->
+        <mat-nav-list>
+          <a mat-list-item routerLink="dashboard">DASHBOARD</a>
+          <mat-divider></mat-divider>
+          <mat-accordion>
+            <mat-expansion-panel (opened)="panelOpenState = true"
+                                 (closed)="panelOpenState = false">
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  Utilisateurs
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <a mat-list-item routerLink="users">Liste des utilisateurs</a>
+              <a mat-list-item routerLink="addUser">Ajout utilisateur</a>
+            </mat-expansion-panel>
+          </mat-accordion>
+          <mat-divider></mat-divider>
+          <mat-accordion>
+            <mat-expansion-panel (opened)="panelOpenState = true"
+                                 (closed)="panelOpenState = false">
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  Formateurs
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <a mat-list-item href="">Liste des utilisateures</a>
+            </mat-expansion-panel>
+          </mat-accordion>
+          <mat-divider></mat-divider>
+          <mat-accordion>
+            <mat-expansion-panel (opened)="panelOpenState = true"
+                                 (closed)="panelOpenState = false">
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  Apprenants
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <a mat-list-item href="">Liste des utilisateures</a>
+            </mat-expansion-panel>
+          </mat-accordion>
+          <mat-divider></mat-divider>
+          <mat-accordion>
+            <mat-expansion-panel (opened)="panelOpenState = true"
+                                 (closed)="panelOpenState = false">
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  Cm
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <a mat-list-item href="">Liste des utilisateures</a>
+            </mat-expansion-panel>
+          </mat-accordion>
+        </mat-nav-list>
+      </mat-sidenav-content>
+    </mat-sidenav-container>
+  </div>
+  <div class="col-10">
+    <router-outlet></router-outlet>
+  </div>
+</div>
+
